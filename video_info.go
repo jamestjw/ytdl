@@ -126,7 +126,7 @@ func (info *VideoInfo) Download(format *Format, dest io.Writer) error {
 }
 
 var (
-	regexpPlayerConfig          = regexp.MustCompile("ytplayer.config = (.*?);ytplayer.web_player_context_config")
+	regexpPlayerConfig          = regexp.MustCompile("ytplayer.config = (.*?);ytplayer.")
 	regexpInitialData           = regexp.MustCompile(`\["ytInitialData"\] = (.+);`)
 	regexpInitialPlayerResponse = regexp.MustCompile(`\["ytInitialPlayerResponse"\] = (.+);`)
 )
